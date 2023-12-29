@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    width: 60%;
+    margin-left: 5%;
+    padding-top: 50px;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    user-select: none;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.primary_text {
+    font-size: 4.7vw;
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgb(255, 72, 0) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondary_text {
+    font-size: 2vw;
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgb(255, 72, 0) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    height: 2px;
+    background: white;
+    background: linear-gradient(90deg, rgba(34, 193, 195, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 30vw;
+    z-index: 50;
+    margin-top: 2vh;
+}
+
+.btn {
+    padding: 1vw;
+    font-family: var(--main-font);
+    height: 3vw;
+    font-size: 1.3vw;
+    background: none;
+    color: white;
+    border: 1px solid transparent;
+    border-image: linear-gradient(10deg, rgb(10, 101, 103) 0%, rgba(255, 255, 255, 0) 50%, rgb(10, 101, 103) 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.02);
+    border: 2px solid transparent;
+    border-image: linear-gradient(10deg, rgb(2, 69, 70) 0%, rgba(255, 255, 255, 0) 50%, rgb(2, 69, 70) 100%);
+    border-image-slice: 1;
+    transition: all 0.1s;
+}
+
+.rocket_img {
+    height: 10vw;
+    z-index: 40;
+}
+
+.image_container {
+    width: 50%;
+    margin-left: -50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.planet_image {
+    width: 100%;
+    border: 10px black solid;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .info_container {
+        justify-content: start;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .image_container {
+        width: 50%;
+        margin-left: -70%;
+    }
+
+    .btn {
+        padding: 2vw;
+        height: 6vw;
+        font-size: 2.6vw;
+    }
+
+    .rocket_img {
+        height: 20vw;
+        z-index: 40;
+    }
+
+    .primary_text {
+        font-size: 6vw;
+    }
+
+    .secondary_text{
+        font-size: 3vw;
+    }
+}

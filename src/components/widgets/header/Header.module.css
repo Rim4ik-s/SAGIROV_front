@@ -1,0 +1,15 @@
+
+.container{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    border-top: 1px rgba(255, 255, 255, 0.1) solid;
+    width: 100%;
+}
+
+.container_2{
+    width: 90%;
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    padding: 0;
+}

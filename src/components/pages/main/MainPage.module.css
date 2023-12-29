@@ -1,0 +1,33 @@
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./public/main_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.scroll{
+    max-height: 90%;
+    overflow: hidden scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+}
+

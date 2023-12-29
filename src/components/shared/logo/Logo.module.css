@@ -1,0 +1,10 @@
+.image {
+    height: 5vw;
+    margin: 1.5vw;
+}
+
+.container{
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    display: flex;
+    width: auto;
+}
